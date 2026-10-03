@@ -1,0 +1,10 @@
+import { useEffect, useState } from 'react'
+import { ArrowUpRight, Coffee, Menu as MenuIcon, X } from 'lucide-react'
+import './Navbar.css'
+const links=[['Home','home'],['About','about'],['Menu','menu'],['Gallery','gallery'],['Reviews','reviews'],['Contact','contact']]
+export default function Navbar(){
+ const [active,setActive]=useState('home'),[open,setOpen]=useState(false),[scrolled,setScrolled]=useState(false)
+ useEffect(()=>{const onScroll=()=>setScrolled(window.scrollY>24);onScroll();window.addEventListener('scroll',onScroll,{passive:true});const observer=new IntersectionObserver(entries=>{const current=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(current)setActive(current.target.id)},{rootMargin:'-25% 0px -60% 0px',threshold:[0,.2,.5]});links.forEach(([,id])=>{const el=document.getElementById(id);if(el)observer.observe(el)});return()=>{window.removeEventListener('scroll',onScroll);observer.disconnect()}},[])
+ const close=()=>setOpen(false)
+ return <header className={`site-header${scrolled?' is-scrolled':''}`}><nav className="nav-shell" aria-label="Main navigation"><a className="brand" href="#home" onClick={close} aria-label="Serein Café home"><span className="brand-mark"><Coffee size={19}/></span><span className="brand-wordmark">serein<span>café</span></span></a><div className={`nav-links${open?' is-open':''}`}>{links.map(([label,id])=><a key={id} href={`#${id}`} className={active===id?'is-active':''} aria-current={active===id?'location':undefined} onClick={close}>{label}</a>)}<a className="nav-mobile-cta" href="tel:+14155550184" onClick={close}>Visit us <ArrowUpRight size={15}/></a></div><a className="nav-cta" href="mailto:hello@sereincafe.com?subject=I'd%20like%20to%20order">Order now <ArrowUpRight size={15}/></a><button className="nav-toggle" type="button" aria-label={open?'Close navigation menu':'Open navigation menu'} aria-expanded={open} onClick={()=>setOpen(v=>!v)}>{open?<X size={21}/>:<MenuIcon size={21}/>}</button></nav></header>
+}

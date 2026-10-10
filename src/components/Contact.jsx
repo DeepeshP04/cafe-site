@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import "./Contact.css";
 const directions =
-  "https://www.google.com/maps/search/?api=1&query=1452+Valencia+Street+San+Francisco+CA+94110";
+  "https://www.google.com/maps/search/?api=1&query=12+Market+Road+Bengaluru+India";
 export default function Contact() {
   return (
     <section
@@ -31,9 +31,9 @@ export default function Contact() {
               <div>
                 <h3>Find us</h3>
                 <p>
-                  1452 Valencia Street
+                  12 Market Road
                   <br />
-                  San Francisco, CA 94110
+                  Bengaluru, India
                 </p>
                 <a href={directions} target="_blank" rel="noreferrer">
                   Get directions <ArrowUpRight size={13} />
@@ -60,9 +60,9 @@ export default function Contact() {
               <div>
                 <h3>Say hello</h3>
                 <p>
-                  <a href="tel:+14155550184">(415) 555-0184</a>
+                  <a href="tel:+919876543210">+91 98765 43210</a>
                   <br />
-                  <a href="mailto:hello@sereincafe.com">hello@sereincafe.com</a>
+                  <a href="mailto:hello@astercafe.in">hello@astercafe.in</a>
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                 <MapPin size={15} />
                 Get directions
               </a>
-              <a className="contact-call" href="tel:+14155550184">
+              <a className="contact-call" href="tel:+919876543210">
                 <Phone size={15} />
                 Call us
               </a>
@@ -93,16 +93,16 @@ export default function Contact() {
           </div>
           <div className="contact-map">
             <iframe
-              title="Map showing Serein Café on Valencia Street in San Francisco"
-              src="https://maps.google.com/maps?q=1452%20Valencia%20Street%2C%20San%20Francisco%2C%20CA%2094110&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              title="Map showing Aster Café in Bengaluru, India"
+              src="https://maps.google.com/maps?q=Bengaluru%2C%20India&t=&z=11&ie=UTF8&iwloc=&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
             <div className="map-label">
               <span className="map-dot" />
               <span>
-                <strong>Serein Café</strong>
-                <small>1452 Valencia Street · San Francisco</small>
+                <strong>Aster Café</strong>
+                <small>12 Market Road · Bengaluru, India</small>
               </span>
             </div>
           </div>

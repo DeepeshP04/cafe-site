@@ -49,7 +49,7 @@ export default function Hero() {
       <a
         className="hero-scroll"
         href="#about"
-        aria-label="Scroll to learn about Serein"
+        aria-label="Scroll to learn about Aster"
       >
         <span>Scroll to slow down</span>
         <ArrowDown size={15} />

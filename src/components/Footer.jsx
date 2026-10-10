@@ -25,7 +25,7 @@ export default function Footer() {
               <Coffee size={19} />
             </span>
             <span className="brand-wordmark">
-              serein<span>café</span>
+              aster<span>café</span>
             </span>
           </a>
           <p>
@@ -37,7 +37,7 @@ export default function Footer() {
             href="https://www.instagram.com/"
             target="_blank"
             rel="noreferrer"
-            aria-label="Serein Café on Instagram"
+            aria-label="Aster Café on Instagram"
           >
             <Instagram size={17} />
           </a>
@@ -57,22 +57,22 @@ export default function Footer() {
           <ul>
             <li>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=1452+Valencia+Street+San+Francisco+CA+94110"
+                href="https://www.google.com/maps/search/?api=1&query=12+Market+Road+Bengaluru+India"
                 target="_blank"
                 rel="noreferrer"
               >
                 <MapPin size={13} />
-                1452 Valencia Street, San Francisco
+                12 Market Road, Bengaluru, India
               </a>
             </li>
             <li>
-              <a href="tel:+14155550184">
+              <a href="tel:+919876543210">
                 <Phone size={13} />
-                (415) 555-0184
+                +91 98765 43210
               </a>
             </li>
             <li>
-              <a href="mailto:hello@sereincafe.com">hello@sereincafe.com</a>
+              <a href="mailto:hello@astercafe.in">hello@astercafe.in</a>
             </li>
             <li>
               <span>Mon–Fri 7–5 · Sat–Sun 8–4</span>
@@ -91,14 +91,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom section-wrap">
-        <span>
-          © {currentYear} Serein Café. Made with care in San Francisco.
-        </span>
+        <span>© {currentYear} Aster Café. Made with care in India.</span>
         <div>
-          <a href="mailto:hello@sereincafe.com?subject=Privacy%20policy">
+          <a href="mailto:hello@astercafe.in?subject=Privacy%20policy">
             Privacy
           </a>
-          <a href="mailto:hello@sereincafe.com?subject=Terms%20and%20conditions">
+          <a href="mailto:hello@astercafe.in?subject=Terms%20and%20conditions">
             Terms
           </a>
         </div>

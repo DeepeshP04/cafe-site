@@ -7,7 +7,7 @@ const groups = [
     note: "A good thing, made slowly",
     items: [
       [
-        "Serein house latte",
+        "Aster house latte",
         "Double espresso, steamed milk, a touch of honey",
         "$6",
       ],
@@ -109,7 +109,7 @@ export default function Menu() {
           </div>
           <a
             className="button button--dark"
-            href="mailto:hello@sereincafe.com?subject=Today's%20specials"
+            href="mailto:hello@astercafe.in?subject=Today's%20specials"
           >
             Ask about today's specials <ArrowUpRight size={15} />
           </a>

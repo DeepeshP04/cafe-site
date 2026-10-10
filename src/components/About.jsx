@@ -21,7 +21,7 @@ export default function About() {
         <div className="about-stamp">
           <span>Made with</span>
           <Heart size={15} fill="currentColor" />
-          <span>in San Francisco</span>
+          <span>in India</span>
         </div>
       </div>
       <div className="about-copy">
@@ -32,7 +32,7 @@ export default function About() {
           <em>A fuller day.</em>
         </h2>
         <p className="section-copy">
-          Serein began with a simple idea: make the everyday feel a little more
+          Aster began with a simple idea: make the everyday feel a little more
           considered. We work with nearby growers, roast our coffee with care,
           and cook food we want to share around our own table.
         </p>

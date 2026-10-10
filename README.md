@@ -1,6 +1,6 @@
-# Serein Café
+# Aster Café
 
-A responsive, single-page café website built with React and Vite. It presents the café's story, menu, gallery, customer reviews, location, hours, and contact options.
+A responsive, single-page café website built with React and Vite for a modern café concept in India. It presents the brand story, menu, gallery, customer reviews, location, hours, and contact details.
 
 ## Getting Started
 

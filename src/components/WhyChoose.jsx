@@ -27,7 +27,7 @@ export default function WhyChoose() {
     <section className="why-section">
       <div className="section-wrap">
         <div className="why-heading">
-          <p className="section-kicker">The Serein feeling</p>
+          <p className="section-kicker">The Aster feeling</p>
           <h2 className="section-title">
             Little details.
             <br />

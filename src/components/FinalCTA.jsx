@@ -19,14 +19,14 @@ export default function FinalCTA() {
         </a>
         <a
           className="button button--outline"
-          href="mailto:hello@sereincafe.com?subject=I'd%20like%20to%20book%20a%20table"
+          href="mailto:hello@astercafe.in?subject=I'd%20like%20to%20book%20a%20table"
         >
           <CalendarDays size={15} />
           Book a table <ArrowUpRight size={14} />
         </a>
       </div>
       <span className="cta-ornament" aria-hidden="true">
-        S
+        A
       </span>
     </section>
   );

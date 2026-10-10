@@ -43,13 +43,13 @@ export default function Navbar() {
           className="brand"
           href="#home"
           onClick={close}
-          aria-label="Serein Café home"
+          aria-label="Aster Café home"
         >
           <span className="brand-mark">
             <Coffee size={19} />
           </span>
           <span className="brand-wordmark">
-            serein<span>café</span>
+            aster<span>café</span>
           </span>
         </a>
         <div className={`nav-links${open ? " is-open" : ""}`}>
@@ -64,13 +64,13 @@ export default function Navbar() {
               {label}
             </a>
           ))}
-          <a className="nav-mobile-cta" href="tel:+14155550184" onClick={close}>
+          <a className="nav-mobile-cta" href="tel:+919876543210" onClick={close}>
             Visit us <ArrowUpRight size={15} />
           </a>
         </div>
         <a
           className="nav-cta"
-          href="mailto:hello@sereincafe.com?subject=I'd%20like%20to%20order"
+          href="mailto:hello@astercafe.in?subject=I'd%20like%20to%20order"
         >
           Order now <ArrowUpRight size={15} />
         </a>

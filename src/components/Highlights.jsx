@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import "./Highlights.css";
 const items = [
   [
-    "The Serein Latte",
+    "The Aster Latte",
     "Our house espresso, soft oat milk, a little honey.",
     "$6",
     "photo-1461023058943-07fcbe16d735",

@@ -1,4 +1,71 @@
-import { ArrowUpRight } from 'lucide-react'
-import './Highlights.css'
-const items=[['The Serein Latte','Our house espresso, soft oat milk, a little honey.','$6','photo-1461023058943-07fcbe16d735','Honey-colored latte in a handmade ceramic cup','House favorite'],['Sunday Morning Toast','Whipped ricotta, stone fruit, garden thyme.','$14','photo-1525351484163-7529414344d8','Freshly prepared toast with fruit and greens','Seasonal'],['Olive Oil Cake','Tender crumb, citrus zest, crème fraîche.','$9','photo-1578985545062-69928b1d9587','A slice of freshly baked café cake','Baked in-house']]
-export default function Highlights(){return <section className="highlights"><div className="section-wrap"><div className="highlights-heading"><div><p className="section-kicker">A few things we love</p><h2 className="section-title">The little <em>standouts.</em></h2></div><a className="text-link" href="#menu">See the full menu <ArrowUpRight size={15}/></a></div><div className="highlight-grid">{items.map(([name,note,price,image,alt,tag],i)=><article className="highlight-item" key={name}><a className="highlight-image" href="#menu" aria-label={`Explore ${name} on the menu`}><img src={`https://images.unsplash.com/${image}?auto=format&fit=crop&w=850&q=82`} alt={alt} loading="lazy"/><span className="highlight-tag">{tag}</span></a><div className="highlight-meta"><span>0{i+1} / SIGNATURE</span><span>{price}</span></div><h3>{name}</h3><p>{note}</p></article>)}</div></div></section>}
+import { ArrowUpRight } from "lucide-react";
+import "./Highlights.css";
+const items = [
+  [
+    "The Serein Latte",
+    "Our house espresso, soft oat milk, a little honey.",
+    "$6",
+    "photo-1461023058943-07fcbe16d735",
+    "Honey-colored latte in a handmade ceramic cup",
+    "House favorite",
+  ],
+  [
+    "Sunday Morning Toast",
+    "Whipped ricotta, stone fruit, garden thyme.",
+    "$14",
+    "photo-1525351484163-7529414344d8",
+    "Freshly prepared toast with fruit and greens",
+    "Seasonal",
+  ],
+  [
+    "Olive Oil Cake",
+    "Tender crumb, citrus zest, crème fraîche.",
+    "$9",
+    "photo-1578985545062-69928b1d9587",
+    "A slice of freshly baked café cake",
+    "Baked in-house",
+  ],
+];
+export default function Highlights() {
+  return (
+    <section className="highlights">
+      <div className="section-wrap">
+        <div className="highlights-heading">
+          <div>
+            <p className="section-kicker">A few things we love</p>
+            <h2 className="section-title">
+              The little <em>standouts.</em>
+            </h2>
+          </div>
+          <a className="text-link" href="#menu">
+            See the full menu <ArrowUpRight size={15} />
+          </a>
+        </div>
+        <div className="highlight-grid">
+          {items.map(([name, note, price, image, alt, tag], i) => (
+            <article className="highlight-item" key={name}>
+              <a
+                className="highlight-image"
+                href="#menu"
+                aria-label={`Explore ${name} on the menu`}
+              >
+                <img
+                  src={`https://images.unsplash.com/${image}?auto=format&fit=crop&w=850&q=82`}
+                  alt={alt}
+                  loading="lazy"
+                />
+                <span className="highlight-tag">{tag}</span>
+              </a>
+              <div className="highlight-meta">
+                <span>0{i + 1} / SIGNATURE</span>
+                <span>{price}</span>
+              </div>
+              <h3>{name}</h3>
+              <p>{note}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

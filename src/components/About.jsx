@@ -1,4 +1,55 @@
-import { ArrowUpRight, Heart, Leaf, Sparkles } from 'lucide-react'
-import './About.css'
-const values=[[Leaf,'Ingredients with a point of view'],[Sparkles,'Coffee worth waking up for'],[Heart,'Room to settle in and stay']]
-export default function About(){return <section className="about section-wrap" id="about" aria-labelledby="about-title"><div className="about-image-wrap"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=82" alt="A cozy café corner filled with morning light and leafy plants" loading="lazy"/><div className="about-stamp"><span>Made with</span><Heart size={15} fill="currentColor"/><span>in San Francisco</span></div></div><div className="about-copy"><p className="section-kicker">A neighborhood kind of place</p><h2 className="section-title" id="about-title">A slower cup.<br/><em>A fuller day.</em></h2><p className="section-copy">Serein began with a simple idea: make the everyday feel a little more considered. We work with nearby growers, roast our coffee with care, and cook food we want to share around our own table.</p><ul className="about-values">{values.map(([Icon,label])=><li key={label}><span><Icon size={16}/></span>{label}</li>)}</ul><a className="text-link" href="#menu">Get to know our menu <ArrowUpRight size={15}/></a></div></section>}
+import { ArrowUpRight, Heart, Leaf, Sparkles } from "lucide-react";
+import "./About.css";
+const values = [
+  [Leaf, "Ingredients with a point of view"],
+  [Sparkles, "Coffee worth waking up for"],
+  [Heart, "Room to settle in and stay"],
+];
+export default function About() {
+  return (
+    <section
+      className="about section-wrap"
+      id="about"
+      aria-labelledby="about-title"
+    >
+      <div className="about-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=82"
+          alt="A cozy café corner filled with morning light and leafy plants"
+          loading="lazy"
+        />
+        <div className="about-stamp">
+          <span>Made with</span>
+          <Heart size={15} fill="currentColor" />
+          <span>in San Francisco</span>
+        </div>
+      </div>
+      <div className="about-copy">
+        <p className="section-kicker">A neighborhood kind of place</p>
+        <h2 className="section-title" id="about-title">
+          A slower cup.
+          <br />
+          <em>A fuller day.</em>
+        </h2>
+        <p className="section-copy">
+          Serein began with a simple idea: make the everyday feel a little more
+          considered. We work with nearby growers, roast our coffee with care,
+          and cook food we want to share around our own table.
+        </p>
+        <ul className="about-values">
+          {values.map(([Icon, label]) => (
+            <li key={label}>
+              <span>
+                <Icon size={16} />
+              </span>
+              {label}
+            </li>
+          ))}
+        </ul>
+        <a className="text-link" href="#menu">
+          Get to know our menu <ArrowUpRight size={15} />
+        </a>
+      </div>
+    </section>
+  );
+}
